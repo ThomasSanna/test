@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+.body{
+    background: linear-gradient(0deg,rgb(177, 194, 207), rgb(123, 142, 173));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.container {
+    border-radius: 20px;
+    margin: 50px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 9px 3px rgb(106, 153, 187);
+    transition: all .2s ease-in-out;
+}
+
+.container > div {
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+
+.moon {
+    border-radius: 30%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(17, 112, 159);
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-right: 25px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.moon:hover {
+    background-color: rgb(43, 91, 143);
+    color: aliceblue;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.img{
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 200px;
+    opacity: 100%;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 2px 4px 1px rgb(17, 112, 159)
+    ;
+}
+
+.bio{
+    word-spacing: 13%;
+    transition: all .2s ease-in-out;
+}
+
+.name {
+    margin: -10px;
+    word-spacing: 133%;
+    font-size: 25px;
+    padding: -10px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.reseaux{
+    font-size: 22px;
+    width: 30%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease-in-out;
+}
+
+.logos{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.iconify:hover, .fa-brands:hover {
+    scale: 1.5;
+    transition: all .2s ease-in-out;
+}
+
+.fa-paintbrush:hover{
+    scale: 1.4;
+    transition: all .2s ease-in-out;
+}
+.fa-solid, .iconify, .fa-brands {
+    transition: all .2s ease-in-out;
+    scale: 1.2;
+}
+
+.reseaux{
+    width: 200px;
+    height: 7%;
+}
+
+.reseaux .lg:hover {
+    color:rgb(34, 97, 133);
+    scale: 1.1;
+}
+.reseaux .fi:hover {
+    color:rgb(89, 179, 126);
+}
+.reseaux .tw:hover {
+    color:rgb(74, 161, 202);
+}
+.reseaux .po:hover {
+    color:rgb(236, 84, 84);
+}
+.fa-paintbrush{
+    scale: 1.0;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+.boutong{
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+.hire{
+    font-family:Georgia, 'Times New Roman', Times, serif !important;
+    color: white;
+    margin-bottom: 10px;
+    background-color: rgb(17, 112, 159);
+    border:none;
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.hire:hover{
+    scale: 1.2;
+    color: rgb(17, 112, 159);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(17, 112, 159);
+    transition: all .2s ease-in-out;
+}
+
+.about{
+    position:relative;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    transition: all .2s ease-in-out;
+}
+
+.nombre{
+    font-weight: bolder;
+}
+
+/*---------------------------------------Noir---------------------------------------------------------------*/
+
+.bodyn{
+    transition: all .2s ease-in-out;
+    background: linear-gradient(0deg,rgb(11, 14, 17), rgb(2, 12, 26)) !important;
+}
+
+.containern {
+    transition: all .2s ease-in-out;
+    background: linear-gradient(32deg, rgb(24, 33, 45), rgb(10, 16, 39)) !important;
+    box-shadow: 1px 1px 9px 3px rgb(30, 91, 131) !important;
+}
+
+.moonn {
+    background: rgb(10, 16, 39,0);
+    transition: all .2s ease-in-out;
+    color: aliceblue !important;
+}
+
+.moonn:hover {
+    transition: all .2s ease-in-out;
+    background-color: rgb(216, 228, 240) !important;
+    color: rgb(20, 33, 44) !important;
+}
+
+.imgn{
+    transition: all .2s ease-in-out;
+    opacity: 100% !important;
+}
+
+.bion{
+    transition: all .2s ease-in-out;
+    color: aliceblue !important;
+}
+
+.namen {
+    transition: all .2s ease-in-out;
+    color: aliceblue !important;
+}
+
+.reseauxn{
+    transition: all .2s ease-in-out;
+    color: aliceblue !important;
+}
+
+.reseauxn .lg:hover {
+    color:rgb(53, 142, 201) !important;
+}
+.reseauxn .fi:hover {
+    color:rgb(89, 179, 126) !important;
+}
+.reseauxn .tw:hover {
+    color:rgb(74, 161, 202) !important;
+}
+
+.hiren{
+    transition: all .2s ease-in-out;
+    color: rgb(238, 248, 255) !important;
+}
+
+.hiren:hover{
+    transition: all .2s ease-in-out;
+    color: rgb(17, 33, 48) !important;
+}
+
+.aboutn{
+    transition: all .2s ease-in-out;
+    color: aliceblue !important;
+}

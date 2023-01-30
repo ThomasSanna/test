@@ -1,0 +1,423 @@
+/*Menu*/
+
+.ouvimg{
+    border:none;
+    background-color: none;
+    box-shadow:none;
+    position: fixed;
+    z-index: 11;
+    top: 3vh;
+    right: 3vw;
+    height: 10vh;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.ouvimg:hover{
+    scale: 1.1;
+    transition: all 0.2s ease;
+}
+.ouvimg:active{
+    scale: 0.9;
+    transition: all 0.2s ease;
+}
+
+
+.containermenu{
+    visibility: hidden;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(6, 14, 37, 0.283);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.5s ease;
+}
+.containermenuactive{
+    visibility: visible;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+}
+
+
+.menu{
+    box-shadow: 0 0 8px 2px rgb(12, 1, 27);
+    border:rgb(12, 1, 27) 8px solid;
+    border-radius: 100px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(18, 18, 41, 0.922);
+    height: 80vh;
+    width: 40vw;
+    transition: all 0.2s ease;
+}
+.menu:hover{
+    scale: 1.02;
+}
+
+
+.butlogo{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.butlogo:hover{
+    scale: 1.1;
+    transition: all 0.2s ease;
+}
+.imagelogo{
+    height: 20vw;
+    box-shadow: none;
+    border: none;
+}
+
+.reseaux{
+    color: #ffffff;
+    font-size: 3vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s ease-in-out;
+}
+
+.logos{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.iconify:hover, .fa-brands:hover {
+    scale: 1.5;
+    transition: all .2s ease-in-out;
+}
+
+.fa-paintbrush:hover{
+    scale: 1.4;
+    transition: all .2s ease-in-out;
+}
+.fa-solid, .iconify, .fa-brands {
+    transition: all .2s ease-in-out;
+    scale: 1.2;
+}
+
+.reseaux{
+    width: 20vw;
+    height: 7%;
+}
+
+.reseaux .lg:hover {
+    color:rgb(34, 97, 133);
+    scale: 1.1;
+}
+.reseaux .fi:hover {
+    color:rgb(89, 179, 126);
+}
+.reseaux .tw:hover {
+    color:rgb(74, 161, 202);
+}
+
+
+
+/* All*/
+
+*{
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 0;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.cases{
+    visibility: hidden;
+    position: fixed;
+}
+
+.psimple{
+    visibility: hidden;
+    position: fixed;
+}
+
+.pdouble{
+    visibility: hidden;
+    position: fixed;
+}
+
+body{
+    height: 100vh;
+    width: auto;
+    background-size: 150px;
+    overflow: hidden;
+    background-image: url(images/LogoW.png), -moz-linear-gradient(top,  #040a19,  #2a0b34);
+}
+
+body *{
+    font-family: 'Poppins', sans-serif;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    max-width: 100vw;
+    border: 1px solid #480371 ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(68, 0, 152);
+    height: 100vh;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+
+.fleche{
+    color: #7a00c1;
+}
+.fleche:hover{
+    color: #b54bf3;
+    transform: scale(1.2);
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(51, 3, 99, 0.3);
+  }
+
+.swiper-pagination-bullet:hover {
+    scale: 1.2;
+    color: rgb(236, 210, 250);
+    opacity: 1;
+    background: rgba(109, 36, 181, 0.79);
+  }
+.swiper-pagination-bullet-active {
+  scale: 1.2;
+  color: #fff;
+  background: linear-gradient(90deg, #7a00c1 0%, #6d11a3 100%);
+}
+.swiper-pagination-bullet-active:hover{
+    scale: 1.2;
+  color: #fff;
+  background: linear-gradient(90deg, #7a00c1 0%, #6d11a3 100%);
+}
+
+
+/* Navigation buttons */
+
+.navigator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: #7a00c1;
+  transition: all 0.2s ease;
+  left: -11.4vw;
+  transition: all 0.2s ease;
+}
+.navcon{
+    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 32vh;
+}
+
+.navigator:hover{
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.navcon button{
+    font-weight: bold;
+    color: #480371;
+    text-align: center;
+    font-size: 1.3vw;
+    border: 1px solid #7606d2;
+    background: linear-gradient(0deg, #f4dfff 0%, #dcd0ff 100%);
+    height: 10vh;
+    width: 12vw;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.navcon button:hover{
+    color: #a02ce3; ;
+    border: 2px solid #a02ce3 ;
+    background: linear-gradient(0deg, #1e0f51 0%, #310b46 100%);
+    transform: scale(1.06);
+    transition: all 0.2s ease;
+}
+
+.active{
+    visibility: visible !important;
+    position: relative !important;
+}
+
+.navcon .buttonactive{
+    border: 1px solid #4b59f3;
+    color: #4b59f3;
+    background: linear-gradient(0deg, #0f2e51 0%, #1a0b46 100%);
+}
+.navcon .buttonactive:hover{
+    color: #1f045c;
+    border: 2px solid #8baaff;
+    background: linear-gradient(0deg, #2c68ac 0%, #4b25bc 100%);
+}
+
+.effet{
+    border-left: none !important;
+    border: rgba(19, 14, 65, 0) solid 1px;
+    background-color: rgba(153, 110, 255, 0.301);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 6vh;
+    height: 38vh;
+    width: 20vw;
+    left: -20px;
+    transition: all 0.2s ease;
+}
+
+.navtop{
+    visibility: hidden;
+}
+
+/*Responsive 1000px*/
+
+@media screen and (max-width: 600px){
+
+    *{
+        transition: all 0.2s ease;
+    }
+
+    .navigator{
+        visibility: hidden;
+    }
+    .swiper-pagination-bullet {
+        visibility: hidden;
+    }
+    img{
+        aspect-ratio: 1.5/1;
+        max-width: 100vw;
+        max-height: 85vh;
+    }
+    .navtop{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 15vh;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: none;
+        background: linear-gradient(0deg, #0f2e51 0%, #1a0b46 100%);
+    }
+    .navtop button{
+        font-size: 4vw !important;
+        border: none;
+        margin-top: .8vh;
+        width: 32vw;
+        height: 13vh;
+        border-radius: 20px;
+        background: linear-gradient(0deg, #071b32 0%, #140838 100%);
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: #d3d8ff;
+        cursor: pointer;
+    }
+    .navtop button:hover{
+        background: linear-gradient(0deg, #0f2e51 0%, #1a0b46 100%);
+        transform: scale(1.06);
+        transition: all 0.2s ease;
+    }
+    .navtop .buttonactive{
+        border: 1px solid #5d3777;
+        background: linear-gradient(0deg, #174757 0%, #1b0854 100%) !important;
+    }
+    .ouvimg{
+        width: 10vh;
+        background: rgba(9, 3, 33, 0.605);
+        border-radius: 50%;
+        border: 1px solid #470d6e;
+    }
+    .containermenu{
+        width: 100vw;
+        height: 100vh;
+    }
+    .imagelogo{
+        aspect-ratio: 1/1;
+        height: 30vw;
+    }
+    .reseaux{
+        padding-top: -4vh;
+        margin-bottom: 4vh;
+    }
+    .logos{
+        font-size: 5vw;
+    }
+    .menu{
+        position: relative;
+        bottom: 10vh;
+        aspect-ratio: 1/1;
+        width: 50vw;
+        height: 60vh;
+    }
+}
+
