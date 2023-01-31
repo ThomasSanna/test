@@ -207,7 +207,10 @@ body{
   background-size: 150px;
   overflow: hidden !important;
   background: linear-gradient(45deg, #040a19, #2a0b34);
-  background-image: url(images/LogoW.png), -moz-linear-gradient(top,  #040a19,  #2a0b34);
+  background-image: url(images/LogoW.png) ;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 body *{
@@ -355,8 +358,6 @@ transition: all 0.2s ease;
 @media screen and (max-width: 600px){
 
   *{
-      max-width: 100vw;
-      max-height: 100vh;
       overflow: hidden;
   }
 
