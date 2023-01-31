@@ -359,7 +359,6 @@
       body{
         width: 100vw;
         height: 100vh;
-        overflow-y: hidden !important;
         overflow: hidden !important;
         height: 100vh !important;
         width: 100vw !important;
@@ -367,6 +366,9 @@
   
       .navigator{
           visibility: hidden;
+      }
+      .swiper-pagination-bullet {
+          scale: 0.8;
       }
       img{
           aspect-ratio: 1.5/1;
@@ -377,7 +379,7 @@
           display: flex;
           justify-content: center;
           z-index: 2;
-          position: absolute;
+          position: fixed;
           bottom: 0;
           width: 100vw;
           height: 15vh;
@@ -419,7 +421,6 @@
           height: 100vh;
       }
       .imagelogo{
-          z-index: 100;
           aspect-ratio: 1/1;
           height: 30vw;
       }
