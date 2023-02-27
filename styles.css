@@ -95,7 +95,7 @@
     transition: all .2s ease-in-out;
 }
 
-.iconify:hover, .fa-brands:hover {
+.iconify:hover, .fa-brands:hover, fa-hand-heart:hover {
     scale: 1.5;
     transition: all .2s ease-in-out;
 }
@@ -115,7 +115,7 @@
 }
 
 .reseaux .lg:hover {
-    color:rgb(34, 97, 133);
+    color:rgb(200, 90, 20);
     scale: 1.1;
 }
 .reseaux .fi:hover {
