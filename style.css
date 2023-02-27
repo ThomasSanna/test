@@ -190,7 +190,7 @@ body{
     height: 100vh !important;
     width: 100vw !important;
     background-size: 150px;
-    overflow-y: hidden !important;
+    overflow: hidden !important;
     background: linear-gradient(45deg, #040a19, #2a0b34);
     background-image: url(images/LogoW.png), -moz-linear-gradient(top,  #040a19,  #2a0b34);
 }
@@ -341,15 +341,21 @@ img{
   
       *{
           transition: all 0.2s ease;
-          overflow-y: hidden !important;
       }
+
+      html{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden !important;
+        height: 100vh !important;
+      }
+
       body{
         width: 100vw;
         height: 100vh;
-        overflow-y: hidden !important;
+        overflow: hidden !important;
         height: 100vh !important;
-        width: 100vw !important;
-      }
+        }
   
       .navigator{
           visibility: hidden;
@@ -358,15 +364,14 @@ img{
           visibility: hidden;
       }
       img{
-          aspect-ratio: 1.5/1;
-          max-width: 100vw;
-          max-height: 85vh;
+            object-fit: cover;
+            height: 85vh;
       }
       .navtop{
           visibility: visible;
           display: flex;
           justify-content: center;
-          z-index: 2;
+          z-index: 100;
           position: fixed;
           bottom: 0;
           width: 100vw;
@@ -427,4 +432,3 @@ img{
           height: 60vh;
       }
   }
-  
