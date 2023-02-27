@@ -95,7 +95,7 @@
     transition: all .2s ease-in-out;
 }
 
-.iconify:hover, .fa-brands:hover, .fa-hand-heart:hover {
+.iconify:hover, .fa-brands:hover, .fa-hand-holding-dollar:hover {
     scale: 1.5 !important;
     transition: all .2s ease-in-out;
 }
